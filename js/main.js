@@ -113,6 +113,20 @@ console.log("here");
 
   });
 
+
+  $('[href^="#"]').on('click', function(event) {
+console.log("here");
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 600);
+    }
+
+  });
+
   /* --------------------------------------------
     JS NOT FOR MOBILE (PARALLAX, OPACITY SCROLL)
   --------------------------------------------- */
