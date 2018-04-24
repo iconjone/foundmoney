@@ -85,10 +85,10 @@ $(document).ready(function(){
   $(function () {
     windowT.scroll(function () {
       if ($(this).scrollTop() > 100) {
-        $('#comment').fadeIn();
+        $('#floatcontact').fadeIn();
 
       } else {
-        $('#comment').fadeOut();
+        $('#floatcontact').fadeOut();
       }
     });
 /*
