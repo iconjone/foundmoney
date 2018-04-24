@@ -59,7 +59,7 @@ $(document).ready(function(){
   --------------------------------------------- */
 	// hide #back-top first
 	$("#back-top").hide();
-  	$("#comment").hide();
+  	$("#floatcontact").hide();
 
 	// fade in #back-top
 	$(function () {
