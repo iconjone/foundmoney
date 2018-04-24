@@ -59,6 +59,7 @@ $(document).ready(function(){
   --------------------------------------------- */
 	// hide #back-top first
 	$("#back-top").hide();
+  	$("#comment").hide();
 
 	// fade in #back-top
 	$(function () {
@@ -78,6 +79,27 @@ $(document).ready(function(){
       }, 600);
       return false;
     });
+  });
+
+
+  $(function () {
+    windowT.scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#comment').fadeIn();
+
+      } else {
+        $('#comment').fadeOut();
+      }
+    });
+/*
+    // scroll body to 0px on click
+    $('#comment a').on('click',function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 600);
+      return false;
+    });
+    */
   });
 
   /* --------------------------------------------
