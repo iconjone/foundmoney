@@ -7975,6 +7975,8 @@ blockquote.custom-blockquote:before {
   height: 40px;
   margin: 0 0 10px 0;
 }
+/****** anchor if need fix ******/
+a.services{display: block; position: relative; top: -40px; visibility: hidden;}
 
 /***** #SKILL BAR ANIMATED #NEW ******/
 .skillbar {

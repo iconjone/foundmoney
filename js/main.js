@@ -144,6 +144,7 @@ console.log("here");
       event.preventDefault();
       $('html, body').animate({
         scrollTop: target.offset().top
+      // window.scroll(0,document.querySelector(this.href).offsetTop - 20);
       }, 600);
     }
 
